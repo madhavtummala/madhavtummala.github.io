@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/jpeg" href="../../../assets/images/logo.png" />
+    <!-- Site Properities -->
+    <meta name="generator" content="DocPad v6.78.4" />
+    <title> Athitya Kumar | <%= $posts[i]["title"] %> </title>
+    <meta name="description" content="<%= $posts[i]["short_desc"] %>" />
+    <meta name="keywords" content="athitya,kumar,iit,iitkgp,developer,open,source,coder,programmer,mechanical,engineering,chess,carnatic,vocalist,tv,series,blog,<%= $posts[i]["short_desc"].split(" ").join(",") %>" />
+    <meta property="og:title" content="<%= $posts[i]["title"] %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://athityakumar.github.io/blog/posts/<%= $posts[i]["filename"] %>/" />
+    <% if $posts[i]["image_preview"].length != 0 %>
+      <meta property="og:image" content="https://athityakumar.github.io/assets/images/blog/<%= $posts[i]["filename"] %>/<%= $posts[i]["image_preview"] %>" />
+    <% else %>
+      <meta property="og:image" content="https://athityakumar.github.io/assets/images/logo.png" />      
+    <% end %>
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:description" content="<%= $posts[i]["short_desc"] %>" />
+    <link rel="stylesheet" type="text/css" class="ui" href="../../../assets/all.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="../../../assets/prism.css">
+  </head>
+  <body id="example" class="index" ontouchstart="">
+    <!-- laptop display -->
+    <div class="following bar">
+      <div class="ui container">
+        <div class="ui large inverted secondary network menu">
+          <div class="item">
+            <div class="ui logo shape">
+              <div class="sides">
+                <div class="active ui side">
+                  <a href="../../../"> @athityakumar </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right menu">
+            <div class="item" style="color: white;">
+              &nbsp;  
+              <div class="ui breadcrumb">
+                <div class="post_search">
+                  <div class="ui fluid search">
+                    <div class="ui icon input">
+                      <input class="prompt" type="text" placeholder="Search posts.">
+                      <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile display -->
+  <div class="ui fixed inverted main menu">
+    <div class="ui container">
+      <div class="item" style="color: white;">
+        &nbsp;  
+        
+        <div class="ui breadcrumb">
+          <a href="../../../" class="section" style="color: white;">@athityakumar</a>
+        </div>
+      </div>
+      <div class="right item" style="color: white;">
+        &nbsp;  
+        
+        <div class="ui breadcrumb">
+          <div class="post_search">
+            <div class="ui right aligned search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Search posts.">
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pusher">
+  <div class="full height">
+    <div class="zoomed masthead segment">
+      <div class="ui container">
+        <div class="introduction">
+          <h1 class="ui inverted header">
+            <span class="tagline">
+              <%= $posts[i]["title"] %>
+  
+        </span>
+          </h1>
+          <h4 class="tagline">  You're here : <a href="../../../">Homepage</a> > <a href="../../page1/">Blog</a> > <a>This Blog Post</a>
+          </h4>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <a href="#go" class="ui labeled primary icon button">
+            <i class="angle double down large icon"></i> &nbsp; Read this post
+      </a>
+          <a class="ui labeled primary icon button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fathityakumar.github.io%2Fblog%2Fposts%2F<%= post["filename"] %>%2Findex.html&amp;src=sdkpreparse" target="_blank">
+            <i class="facebook large icon"></i> &nbsp; Share
+          </a>
+          <a class="ui labeled primary icon button" href="https://twitter.com/intent/tweet?text=Do+give+this+a+read.&url=https%3A%2F%2Fathityakumar.github.io%2Fblog%2Fposts%2F<%= post["filename"] %>%2Findex.html" target="_blank">
+            <i class="twitter large icon"></i> &nbsp; Tweet
+          </a>
+          <!-- <a href="resume.html" class="ui labeled primary icon button">
+        <i class="file pdf outline large icon"></i> View Resume
+      </a> -->
+        </div>
+      </div>
+    </div>
+    <div id="go" class="ui vertical stripe intro segment">
+      <div class="ui stackable very relaxed grid container">
+        <div class="row">
+          <div class="sixteen wide column center aligned">
+            <div class="ui hidden divider"></div>
+            <h2 class="ui title"> <%= $posts[i]["title"] %></h2>
+            <p class="ui description">Posted on <%= $posts[i]["date"] %> at <%= $posts[i]["time"] %> by <a href="../../../">The Vibe</a>.</p>
+            <p>
+              <% $posts[i]["tag_data"].each do |tag| %>
+              <a href="../../tags/<%= tag["filename"] %>/page1/" class="ui <%= tag["color"] %> tag label"> <%= tag["name"] %> </a>
+              <% end %>
+            </p>
+         </div>
+        </div>
+      </div>
+      <div class='stackable very relaxed ui grid container fakeload'>
+        <div class='row'>
+          <div class="twelve wide column">
+            <%= $posts[i]["html_content"] %>
+          </div>
+          <div class="four wide column">
+            <div class="ui fluid centered card">
+              <div class="content">
+                <a class="header ui blue top left attached label">Tags</a>
+                <p class="description">
+                  <div class="ui hidden divider"></div>
+                  <div class="tag_search">
+                    <div class="ui fluid search center aligned">
+                      <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="Search tags.">
+                        <i class="search icon"></i>
+                      </div>
+                      <div class="results"></div>
+                    </div>
+                  </div>
+                  <div class="ui hidden divider"></div>
+                    <% $tags.each do |tag| %>
+                      <a href="../../tags/<%= tag["filename"] %>/page1/" class="ui <%= tag["color"] %> tag label"><%= tag["name"] %></a>                      
+                    <% end %>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui stackable very relaxed grid container">
+        <div class="row">
+          <div class="sixteen wide column center aligned">
+            <% if prev_post_exists %>
+            <a href="../<%= prev_post_link %>/" class="ui labeled primary icon left floated button">
+              <i class="angle double left large icon"></i> &nbsp; Previous post
+            </a>
+            <% else %>
+            <a class="ui labeled icon left floated button">
+              <i class="angle double left large icon"></i> &nbsp; Previous post
+            </a>
+            <% end %>
+            <% if next_post_exists %>
+            <a href="../<%= next_post_link %>" class="ui right labeled primary icon right floated button">
+              Next post &nbsp; <i class="angle double right large icon"></i>
+            </a>
+            <% else %>
+            <a class="ui right labeled icon right floated button">
+              Next post &nbsp; <i class="angle double right large icon"></i>
+            </a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="ui stackable very relaxed grid container">
+        <div class="row">
+          <div class="sixteen wide column center aligned">
+            <div id="disqus_thread"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui black inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted grid">
+        <div class="sixteen wide right floated column">
+          <h4 class="ui inverted teal header">
+            Built with &nbsp; <i class="heart icon red small"></i> by @athityakumar.
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="#" class="scrollToTop"><span class="ui primary icon button"><b><i class="angle double up large icon"></i></b></span></a>
+<script>
+  window.less = {
+          async        : true,
+          environment  : 'production',
+          fileAsync    : false,
+          onReady      : false,
+          useFileCache : true
+  };
+
+var post_content = [
+  <% for i in (0..$posts.count-1) %>
+    <% if i != $posts.count-1 %>  
+      { url: "../<%= $posts[i]["filename"] %>/",  post_title: "<%= $posts[i]["title"] %>" },
+    <% else %>
+      { url: "../<%= $posts[i]["filename"] %>/",  post_title: "<%= $posts[i]["title"] %>" }
+    <% end %>
+  <% end %>
+];
+
+var tag_content = [
+  <% for i in (0..$tags.count-1) %>
+    <% if i != $tags.count-1 %>  
+      { url: "../../tags/<%= $tags[i]["filename"] %>/page1/",  tag_title: "<%= $tags[i]["name"] %>", color: "<%= $tags[i]["color"] %>" },
+    <% else %>
+      { url: "../../tags/<%= $tags[i]["filename"] %>/page1/",  tag_title: "<%= $tags[i]["name"] %>", color: "<%= $tags[i]["color"] %>" }
+    <% end %>
+  <% end %>
+];
+
+</script>
+<script src="../../../assets/all.js"></script>
+<script src="../../../assets/prism.js"></script>
+<script>
+  /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  
+    var disqus_config = function () {
+    this.page.url = "http://athityakumar.github.io/blog/posts/<%= $posts[j]["filename"] %>/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "<%= $posts[j]["disqus_identifier"] %>"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+  
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://athityakumar-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+</body>
+</html>

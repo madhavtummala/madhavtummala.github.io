@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/jpeg" href="../../../assets/images/logo.png" />
+    <!-- Site Properities -->
+    <meta name="generator" content="DocPad v6.78.4" />
+    <title> Athitya Kumar | GSoC 2017 - Coding Period | Week 3 </title>
+    <meta name="description" content="Through this blog post, I'd like to document my progress in the third week of the Coding period, Google Summer of Code 2017. Also, there is something special in the air about the 18th of June." />
+    <meta name="keywords" content="athitya,kumar,iit,iitkgp,developer,open,source,coder,programmer,mechanical,engineering,chess,carnatic,vocalist,tv,series,blog,Through,this,blog,post,,I'd,like,to,document,my,progress,in,the,third,week,of,the,Coding,period,,Google,Summer,of,Code,2017.,Also,,there,is,something,special,in,the,air,about,the,18th,of,June." />
+    <meta property="og:title" content="GSoC 2017 - Coding Period | Week 3" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://athityakumar.github.io/blog/posts/GSoC_2017_-_Coding_Period_|_Week_3/" />
+    <meta property="og:image" content="https://athityakumar.github.io/assets/images/blog/GSoC_2017_-_Coding_Period_|_Week_3/gsoc.png" />
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:description" content="Through this blog post, I'd like to document my progress in the third week of the Coding period, Google Summer of Code 2017. Also, there is something special in the air about the 18th of June." />
+    <link rel="stylesheet" type="text/css" class="ui" href="../../../assets/all.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="../../../assets/prism.css">
+  </head>
+  <body id="example" class="index" ontouchstart="">
+    <!-- laptop display -->
+    <div class="following bar">
+      <div class="ui container">
+        <div class="ui large inverted secondary network menu">
+          <div class="item">
+            <div class="ui logo shape">
+              <div class="sides">
+                <div class="active ui side">
+                  <a href="../../../"> @athityakumar </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right menu">
+            <div class="item" style="color: white;">
+              &nbsp;  
+              <div class="ui breadcrumb">
+                <div class="post_search">
+                  <div class="ui fluid search">
+                    <div class="ui icon input">
+                      <input class="prompt" type="text" placeholder="Search posts.">
+                      <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile display -->
+  <div class="ui fixed inverted main menu">
+    <div class="ui container">
+      <div class="item" style="color: white;">
+        &nbsp;  
+        <div class="ui breadcrumb">
+          <a href="../../../" class="section" style="color: white;">@athityakumar</a>
+        </div>
+      </div>
+      <div class="right item" style="color: white;">
+        &nbsp;  
+        <div class="ui breadcrumb">
+          <div class="post_search">
+            <div class="ui right aligned search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Search posts.">
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pusher">
+  <div class="full height">
+    <div class="zoomed masthead segment">
+      <div class="ui container">
+        <div class="introduction">
+          <h1 class="ui inverted header">
+            <span class="tagline">
+              GSoC 2017 - Coding Period | Week 3  
+            </span>
+          </h1>
+          <h4 class="tagline">  You're here : <a href="../../../">Homepage</a> > <a href="../../page1/">Blog</a> > <a>This Blog Post</a>
+          </h4>
+          <div class="ui hidden divider"></div>
+          <div class="ui hidden divider"></div>
+          <a href="#go" class="ui labeled primary icon button">
+            <i class="angle double down large icon"></i> &nbsp; Read this post
+          </a>
+          <a class="ui labeled primary icon button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fathityakumar.github.io%2Fblog%2Fposts%2FGSoC_2017_-_Coding_Period_|_Week_3%2Findex.html&amp;src=sdkpreparse" target="_blank">
+            <i class="facebook large icon"></i> &nbsp; Share
+          </a>
+          <a class="ui labeled primary icon button" href="https://twitter.com/intent/tweet?text=Do+give+this+a+read.&url=https%3A%2F%2Fathityakumar.github.io%2Fblog%2Fposts%2FGSoC_2017_-_Coding_Period_|_Week_3%2Findex.html" target="_blank">
+            <i class="twitter large icon"></i> &nbsp; Tweet
+          </a>
+          <!-- <a href="resume.html" class="ui labeled primary icon button">
+        <i class="file pdf outline large icon"></i> View Resume
+      </a> -->
+        </div>
+      </div>
+    </div>
+    <div id="go" class="ui vertical stripe intro segment">
+      <div class="ui stackable very relaxed grid container">
+        <div class="row">
+          <div class="sixteen wide column center aligned">
+            <div class="ui hidden divider"></div>
+            <h2 class="ui title"> GSoC 2017 - Coding Period | Week 3</h2>
+            <p class="ui description">Posted on 18/06/2017 at 3:30 PM by <a href="../../../">The Vibe</a>.</p>
+            <p>
+              <a href="../../tags/software/page1/" class="ui brown tag label"> Software </a>
+              <a href="../../tags/development/page1/" class="ui brown tag label"> Development </a>
+              <a href="../../tags/documentation/page1/" class="ui green tag label"> Documentation </a>
+              <a href="../../tags/ruby/page1/" class="ui blue tag label"> Ruby </a>
+              <a href="../../tags/gsoc_2017/page1/" class="ui blue tag label"> GSoC 2017 </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='stackable very relaxed ui grid container fakeload'>
+        <div class='row'>
+          <div class="twelve wide column">
+            <p><img src='../../../assets/images/load.png' class='ui centered image' data-src="../../../assets/images/blog/GSoC_2017_-_Coding_Period_|_Week_3/banner.png" alt="GSoC Banner image"></p>
+            <p><span style='display:block; float:left; font-size: 200%;  color:#ffffff; margin-top:5px; margin-right:8px; padding: 10px 20px 10px 20px; text-align:center; background-color: #000;'>T</span>here is something special in the air about the 18th of June. But what might 
+              possibly be special about this day? Maybe it&#39;s the <em><strong>International Father&#39;s 
+                  day</strong></em> ? Or maybe it&#39;s <em><strong>my birthday</strong></em>? Or maybe it&#39;s the <em><strong>Champions 
+                  Trophy 2017 Finale</strong></em> ? Or maybe because it&#39;s just a <em><strong>Sunday</strong></em>? <em>No points 
+                for guessing, it&#39;s all of the above packaged into one single day.</em></p>
+            <p>Today also marks the end of the 3rd week of coding period of my GSoC project,
+              <a target='_blank' href="https://github.com/athityakumar/daru-io">daru-io</a>. <em>Time flies afterall.</em>
+              Through this blog post, I&#39;d like to document the progress that happened
+              in this week.</p>
+            <p><br>
+              <div class='ui horizontal divider' id='JSON Importer'>JSON Importer</div>
+            </p>
+            <p>According to my timeline, the next importer I had planned to extend support,
+              was the JSON Importer. For the uninitiated, JSON is the format in which most
+              APIs provide response. For example, a typical API JSON response looks like
+              the below -</p>
+            <pre>
+  <code class='language-ruby' style='background-color : #fff;'>
+    #! Simple JSON
+    {
+      simple_key_1: :simple_value_1,
+      simple_key_2: :simple_value_2,
+      ...,
+      simple_key_n: :simple_value_n
+    }
+
+
+    #! Complexly nested JSON
+    {
+      simple_key_1:  :simple_value_1,
+      complex_key_1: {
+        simple_key_2: :simple_value_2,
+        complex_key_2: [1,2,3],
+        ... 
+        # More complex structures constituting of nested arrays,
+        # nested hashes or combinations of both.
+      }
+    }
+  </code></pre>
+          </pre>
+          <p>Importing these simple JSON responses into <code class='language-ruby' style='background-color : #fff;'>Daru::DataFrame</code></pre>
+           was quite
+          simple, as the <code class='language-ruby' style='background-color : #fff;'>Daru::DataFrame.new()</code></pre>
+         method already supports various
+        types of inputs like hashes, arrays or array of hashes. Here&#39;s an example
+        showing import from a simple JSON response -</p>
+      <pre>
+  <code class='language-ruby' style='background-color : #fff;'>
+  require 'daru/io/importers/json'
+  => true
+
+  url = 'https://data.nasa.gov/resource/2vr3-k9wn.json'
+  df  = Daru::IO::Importers::JSON.new(url).call
+
+  df
+
+  => < Daru::DataFrame(202x10) >
+       designation discovery_      h_mag      i_deg    moid_au orbit_clas  period_yr ...
+     0 419880 (20 2011-01-07       19.7       9.65      0.035     Apollo       4.06 ...
+     1 419624 (20 2010-09-17       20.5      14.52      0.028     Apollo          1 ...
+     2 414772 (20 2010-07-28         19      23.11      0.333     Apollo       1.31 ...
+     3 414746 (20 2010-03-06         18      23.89      0.268       Amor       4.24 ...
+     4 407324 (20 2010-07-18       20.7       9.12      0.111     Apollo       2.06 ...
+     5 398188 (20 2010-06-03       19.5      13.25      0.024       Aten        0.8 ...
+     6 395207 (20 2010-04-25       19.6      27.85      0.007     Apollo       1.96 ...
+     7 386847 (20 2010-06-06         18       5.84      0.029     Apollo        2.2 ...
+   ...        ...        ...        ...        ...        ...        ...        ... ...
+  </code></pre>
+    </pre>
+    <p>Cool. But what about the important scenario of complexly nested structures?
+      The <strong><a target='_blank' href="https://github.com/joshbuddy/jsonpath">JsonPath</a></strong>
+      gem comes to rescue here, by allowing users to select certain
+      json-paths from the complex JSON structure, and then the <code class='language-ruby' style='background-color : #fff;'>Daru::DataFrame</code></pre>
+    is constructed from these json-paths. Hence, <code class='language-ruby' style='background-color : #fff;'>Daru::IO::Importers::JSON</code></pre>
+   can
+  be used to import dataframe from complexly nested JSON, in the below manner -</p>
+<pre>
+  <code class='language-ruby' style='background-color : #fff;'>
+  require 'daru/io/importers/json'
+  => true
+
+  url = 'http://api.tvmaze.com/singlesearch/shows?q=game-of-thrones&embed=episodes'
+  df  = Daru::IO::Importers::JSON.new(url,
+            "$.._embedded..episodes..name",
+          "$.._embedded..episodes..season",
+          "$.._embedded..episodes..number",
+           index: (10..70).to_a,
+           RunTime: "$.._embedded..episodes..runtime"
+        ).call
+
+  # Note that the hash json-path selectors like index, RunTime, etc.
+  # should be given after normal json-path selectors like that of
+  # name, season and number.
+
+  df
+
+  => < Daru::DataFrame(61x4) >
+           name     season     number    RunTime
+  10 Winter is           1          1         60
+  11 The Kingsr          1          2         60
+  12  Lord Snow          1          3         60
+  13 Cripples,           1          4         60
+  14 The Wolf a          1          5         60
+  15 A Golden C          1          6         60
+  16 You Win or          1          7         60
+  17 The Pointy          1          8         60
+  18     Baelor          1          9         60
+  19 Fire and B          1         10         60
+  20 The North           2          1         60
+  21 The Night           2          2         60
+  22 What is De          2          3         60
+  23 Garden of           2          4         60
+  24 The Ghost           2          5         60
+  ...        ...        ...        ...        ...
+  </code></pre>
+</pre>
+<p>Currently, the JSON Importer is able to parse from local JSON files, remote
+  JSON files, JSON strings or JSON as Ruby objects (Arrays / Hashes).
+  However, certain beautifications are pending in the code &amp; documentation.
+  If you&#39;re interested in knowing about what&#39;s making this work, please feel
+  free to have a look at the <code class='language-ruby' style='background-color : #fff;'>lib/io/importers/json.rb</code></pre>
+ file in 
+<a target='_blank' href="https://github.com/athityakumar/daru-io/pull/21">this Pull Request</a>. Also,
+have a look at this screenshot from the documentation to get to know better
+about the arguments that this method takes.</p>
+<p><img src='../../../assets/images/load.png' class='ui centered image' data-src="../../../assets/images/blog/GSoC_2017_-_Coding_Period_|_Week_3/json_params.png" alt="JSON Importer params"></p>
+<p><br>
+  <div class='ui horizontal divider' id='Discussion : A faster csv Importer'>Discussion : A faster csv Importer</div>
+</p>
+<p>From <a target='_blank' href="https://github.com/SciRuby/daru/issues/337">this Issue</a>,
+  I came to know that the existing CSV Importer acts slow (kind of),
+  especially when the CSV file is really huge. Being asked by mentor 
+  <a target='_blank' href="https://github.com/v0dro/">Sameer</a> to check for better alternatives
+  for faster imports from CSV, I tested quite a few Ruby gems that parse
+  CSV files. Here are the benchmarks for the various gems -</p>
+<pre>
+  <code class='language-ruby' style='background-color : #fff;'>
+  #! Benchmark results for CSV Importer
+
+                        user       system      total         real
+  existing stdlib     99.380000   1.290000  100.670000   (142.255080)
+  modified stdlib     17.340000   0.470000   17.810000   ( 40.721766)
+  smartercsv          65.400000   1.000000   66.400000   (116.842460)
+  fastcsv             7.660000    0.380000    8.040000   ( 13.105506)
+  rcsv                5.850000    0.210000    6.060000   (  7.756945)
+  </code></pre>
+</pre>
+<pre>
+  <code class='language-ruby' style='background-color : #fff;'>
+  #! Importing a huge CSV file into Daru::DataFrame with rcsv gem
+  require 'daru'
+  require 'rcsv'
+  df  = Daru::DataFrame.rows Rcsv.parse(File.open('path/to/water.csv'))
+  </code></pre>
+</pre>
+<pre>
+  <code class='language-ruby' style='background-color : #fff;'>
+  #! Importing a huge CSV file into Daru::DataFrame with fastcsv gem
+  require 'daru'
+  require 'fastcsv'
+  all = []
+  File.open('path/to/water.csv') { |f| FastCSV.raw_parse(f) { |row| all.push row } }
+  df = Daru::DataFrame.rows all[1..-1], order: all[0]
+  </code></pre>
+</pre>
+<p>Yes, both <a target='_blank' href="https://github.com/jpmckinney/fastcsv">fastcsv</a>
+  and <a target='_blank' href="https://github.com/fiksu/rcsv">rcsv</a>
+  come out to be 20x faster than the existing method. Depending on the outcome
+  of further discussions on 
+  <a target='_blank' href="https://github.com/SciRuby/daru/issues/337">this issue</a>&#39;s thread,
+  <code class='language-ruby' style='background-color : #fff;'>Daru::IO</code></pre>
+ might most likely feature a faster CSV Importer in the near future,
+with support for fastcsv and/or rcsv.</p>
+</div>
+<div class="four wide column">
+  <div class="ui fluid centered card">
+    <div class="content">
+      <a class="header ui blue top left attached label">Tags</a>
+      <p class="description">
+        <div class="ui hidden divider"></div>
+        <div class="tag_search">
+          <div class="ui fluid search center aligned">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="Search tags.">
+              <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+          </div>
+        </div>
+        <div class="ui hidden divider"></div>
+        <a href="../../tags/team_auv/page1/" class="ui red tag label">TEAM AUV</a>
+        <a href="../../tags/metakgp/page1/" class="ui black tag label">Metakgp</a>
+        <a href="../../tags/iit_kharagpur/page1/" class="ui violet tag label">IIT Kharagpur</a>
+        <a href="../../tags/web/page1/" class="ui brown tag label">Web</a>
+        <a href="../../tags/software/page1/" class="ui brown tag label">Software</a>
+        <a href="../../tags/design/page1/" class="ui brown tag label">Design</a>
+        <a href="../../tags/development/page1/" class="ui brown tag label">Development</a>
+        <a href="../../tags/experience/page1/" class="ui green tag label">Experience</a>
+        <a href="../../tags/rant/page1/" class="ui green tag label">Rant</a>
+        <a href="../../tags/documentation/page1/" class="ui green tag label">Documentation</a>
+        <a href="../../tags/javascript/page1/" class="ui blue tag label">JavaScript</a>
+        <a href="../../tags/python/page1/" class="ui blue tag label">Python</a>
+        <a href="../../tags/ruby/page1/" class="ui blue tag label">Ruby</a>
+        <a href="../../tags/php/page1/" class="ui blue tag label">PHP</a>
+        <a href="../../tags/ruby_on_rails/page1/" class="ui blue tag label">Ruby on Rails</a>
+        <a href="../../tags/c++/page1/" class="ui blue tag label">C++</a>
+        <a href="../../tags/chess/page1/" class="ui orange tag label">Chess</a>
+        <a href="../../tags/music/page1/" class="ui orange tag label">Music</a>
+        <a href="../../tags/gsoc_2017/page1/" class="ui blue tag label">GSoC 2017</a>
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="ui stackable very relaxed grid container">
+  <div class="row">
+    <div class="sixteen wide column center aligned">
+      <a href="../GSoC_2017_-_Coding_Period_|_Week_2/" class="ui labeled primary icon left floated button">
+        <i class="angle double left large icon"></i> &nbsp; Previous post
+      </a>
+      <a href="../GSoC_2017_-_Coding_Period_|_Week_4" class="ui right labeled primary icon right floated button">
+        Next post &nbsp; <i class="angle double right large icon"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="ui stackable very relaxed grid container">
+  <div class="row">
+    <div class="sixteen wide column center aligned">
+      <div id="disqus_thread"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="ui black inverted vertical footer segment">
+  <div class="ui center aligned container">
+    <div class="ui stackable inverted grid">
+      <div class="sixteen wide right floated column">
+        <h4 class="ui inverted teal header">
+          Built with &nbsp; <i class="heart icon red small"></i> by @athityakumar.
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<a href="#" class="scrollToTop"><span class="ui primary icon button"><b><i class="angle double up large icon"></i></b></span></a>
+<script>
+  window.less = {
+          async        : true,
+          environment  : 'production',
+          fileAsync    : false,
+          onReady      : false,
+          useFileCache : true
+  };
+  
+  var post_content = [
+  
+      { url: "../My_Internship_Experience_at_Intuit_India/",  post_title: "My Internship Experience at Intuit India" },
+  
+      { url: "../The_Internship_Hunt/",  post_title: "The Internship Hunt for Summers 2018" },
+  
+      { url: "../GSoC_2017_-_Final_Work_Submission/",  post_title: "GSoC 2017 - Final Work Submission" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_13/",  post_title: "GSoC 2017 - Coding Period | Week 13" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_12/",  post_title: "GSoC 2017 - Coding Period | Week 12" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_11/",  post_title: "GSoC 2017 - Coding Period | Week 11" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_10/",  post_title: "GSoC 2017 - Coding Period | Week 10" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_9/",  post_title: "GSoC 2017 - Coding Period | Week 9" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_8/",  post_title: "GSoC 2017 - Coding Period | Week 8" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_7/",  post_title: "GSoC 2017 - Coding Period | Week 7" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_6/",  post_title: "GSoC 2017 - Coding Period | Week 6" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_5/",  post_title: "GSoC 2017 - Coding Period | Week 5" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_4/",  post_title: "GSoC 2017 - Coding Period | Week 4" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_3/",  post_title: "GSoC 2017 - Coding Period | Week 3" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_2/",  post_title: "GSoC 2017 - Coding Period | Week 2" },
+  
+      { url: "../GSoC_2017_-_Coding_Period_|_Week_1/",  post_title: "GSoC 2017 - Coding Period | Week 1" },
+  
+      { url: "../GSoC_2017_-_Community_Bonding_Period/",  post_title: "GSoC 2017 - Community Bonding Period" },
+  
+      { url: "../GSoC_2017_-_Acceptance_of_Student_Proposal/",  post_title: "GSoC 2017 - Acceptance of Student Proposal" },
+  
+      { url: "../A_Tale_of_GitHub_Usernames/",  post_title: "A Tale of GitHub Usernames" },
+  
+      { url: "../Inbound_API_Gem/",  post_title: "A Ruby API gem for Inbound.org platform" },
+  
+      { url: "../GitHub_Follower_Notification_App/",  post_title: "GitHub Follower Notification App" },
+  
+      { url: "../The_Covariance_Confusion/",  post_title: "The Covariance Confusion" },
+  
+      { url: "../Kharagpur_Winter_of_Code_2016/",  post_title: "Kharagpur Winter of Code 2016" },
+                { url: "../Hello_World/",  post_title: "Hello World" }
+      ];
+  
+  var tag_content = [
+  
+      { url: "../../tags/team_auv/page1/",  tag_title: "TEAM AUV", color: "red" },
+  
+      { url: "../../tags/metakgp/page1/",  tag_title: "Metakgp", color: "black" },
+  
+      { url: "../../tags/iit_kharagpur/page1/",  tag_title: "IIT Kharagpur", color: "violet" },
+  
+      { url: "../../tags/web/page1/",  tag_title: "Web", color: "brown" },
+  
+      { url: "../../tags/software/page1/",  tag_title: "Software", color: "brown" },
+  
+      { url: "../../tags/design/page1/",  tag_title: "Design", color: "brown" },
+  
+      { url: "../../tags/development/page1/",  tag_title: "Development", color: "brown" },
+  
+      { url: "../../tags/experience/page1/",  tag_title: "Experience", color: "green" },
+  
+      { url: "../../tags/rant/page1/",  tag_title: "Rant", color: "green" },
+  
+      { url: "../../tags/documentation/page1/",  tag_title: "Documentation", color: "green" },
+  
+      { url: "../../tags/javascript/page1/",  tag_title: "JavaScript", color: "blue" },
+  
+      { url: "../../tags/python/page1/",  tag_title: "Python", color: "blue" },
+  
+      { url: "../../tags/ruby/page1/",  tag_title: "Ruby", color: "blue" },
+  
+      { url: "../../tags/php/page1/",  tag_title: "PHP", color: "blue" },
+  
+      { url: "../../tags/ruby_on_rails/page1/",  tag_title: "Ruby on Rails", color: "blue" },
+  
+      { url: "../../tags/c++/page1/",  tag_title: "C++", color: "blue" },
+  
+      { url: "../../tags/chess/page1/",  tag_title: "Chess", color: "orange" },
+  
+      { url: "../../tags/music/page1/",  tag_title: "Music", color: "orange" },
+                { url: "../../tags/gsoc_2017/page1/",  tag_title: "GSoC 2017", color: "blue" }
+      ];
+</script>
+<script src="../../../assets/all.js"></script>
+<script src="../../../assets/prism.js"></script>
+<script>
+  /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  
+    var disqus_config = function () {
+    this.page.url = "http://athityakumar.github.io/blog/posts/GSoC_2017_-_Coding_Period_|_Week_3/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = ""; // Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+  
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://athityakumar-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+</body>
+</html>
