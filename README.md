@@ -50,3 +50,8 @@ If you'd like to **use the template without the attribution**, you can [buy the 
 - [GitHub Calendar Plugin](https://github.com/IonicaBizau/github-calendar)
 - [jQuery RSS](https://github.com/sdepold/jquery-rss)
 - Profile image: [Ben Smith](https://www.flickr.com/photos/dotbenjamin/2577394151)
+=======
+# madhavchoudhary.github.io
+
+The profile homepage and blog repository of Madhav Tummala.
+>>>>>>> 8dbd1cb1d64d57e3a433752a6c81fb4599486e54
