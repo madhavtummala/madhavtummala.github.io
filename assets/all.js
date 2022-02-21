@@ -2110,7 +2110,7 @@ $(function() {
 
 $('.masthead h1 b').typed({
   strings         : [
-    "a software developer.","a programmer." , "a cinephile." , "an open-source enthusiast.", "an aquaphile.","a fan of TV series'.","trying to be best at everything"
+    "a foss enthusiast", "a ployglot", "a hobby swimmer", "a data hoarder", "a cinephile", "a geoGuessr", "a rustacean", "a history lover"
   ],
   showCursor      : false,
   typeSpeed       : 50,

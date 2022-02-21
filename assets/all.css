@@ -9266,7 +9266,7 @@ i.icon.database:before {
 }
 
 i.icon.server:before {
-  content: "\f233";
+  content: url(https://user-images.githubusercontent.com/29799995/155005825-d50160a8-95b6-4114-8cae-1a7f43abf5ed.png);
 }
 
 i.icon.usb:before {
@@ -10326,7 +10326,8 @@ i.icon.scribd:before {
 }
 
 i.icon.gitlab:before {
-  content: "\f296";
+  /*content: "\f296";*/
+  content: url(https://user-images.githubusercontent.com/29799995/154994888-2f4b3ca4-15ea-4227-9818-5952799f61ca.png);
 }
 
 i.icon.wpbeginner:before {
